@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<PORTS>
+  <PORTA>
+    <A_PIN0> OUT_H </A_PIN0>
+    <A_PIN1> OUT_L </A_PIN1>
+    <A_PIN2> IN_H_IMP </A_PIN2>
+    <A_PIN3> IN_P </A_PIN3>
+    <A_PIN4> OUT_H </A_PIN4>
+    <A_PIN5> OUT_L </A_PIN5>
+    <A_PIN6> IN_H_IMP </A_PIN6>
+    <A_PIN7> IN_P </A_PIN7>
+  </PORTA>
+  <PORTB>
+    <B_PIN0> OUT_H </B_PIN0>
+    <B_PIN1> OUT_L </B_PIN1>
+    <B_PIN2> IN_H_IMP </B_PIN2>
+    <B_PIN3> IN_P </B_PIN3>
+    <B_PIN4> OUT_H </B_PIN4>
+    <B_PIN5> OUT_L </B_PIN5>
+    <B_PIN6> IN_H_IMP </B_PIN6>
+    <B_PIN7> IN_P </B_PIN7>
+  </PORTB>
+  <PORTC>
+    <C_PIN0> OUT_H </C_PIN0>
+    <C_PIN1> OUT_L </C_PIN1>
+    <C_PIN2> IN_H_IMP </C_PIN2>
+    <C_PIN3> IN_P </C_PIN3>
+    <C_PIN4> OUT_H </C_PIN4>
+    <C_PIN5> OUT_L </C_PIN5>
+    <C_PIN6> IN_H_IMP </C_PIN6>
+    <C_PIN7> IN_P </C_PIN7>
+  </PORTC>
+  <PORTD>
+    <D_PIN0> OUT_H </D_PIN0>
+    <D_PIN1> OUT_L </D_PIN1>
+    <D_PIN2> IN_H_IMP </D_PIN2>
+    <D_PIN3> IN_P </D_PIN3>
+    <D_PIN4> OUT_H </D_PIN4>
+    <D_PIN5> OUT_L </D_PIN5>
+    <D_PIN6> IN_H_IMP </D_PIN6>
+    <D_PIN7> IN_P </D_PIN7>
+  </PORTD>
+</PORTS>

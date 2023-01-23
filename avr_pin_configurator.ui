@@ -1,0 +1,3144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1079</width>
+    <height>748</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1079</width>
+    <height>748</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QToolBox" name="portsForm">
+   <property name="geometry">
+    <rect>
+     <x>-2</x>
+     <y>-3</y>
+     <width>1091</width>
+     <height>750</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>ArrowCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget{
+color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+border-color: rgb(255, 255, 255);
+selection-background-color: rgb(85, 0, 0);
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: rgb(255, 255, 255);
+}
+QRadioButton{
+border: none;
+}
+QRadioButton::indicator::unchecked{ 
+border: 1px solid; 
+border-color: rgb(255, 85, 0);
+border-radius: 5px;
+background-color: rgb(255, 85, 0); 
+width: 11px; 
+height: 11px; 
+}
+
+QRadioButton::indicator::checked{ 
+border: 3px solid; 
+border-color: white;
+border-radius: 6px;
+background-color: rgb(85, 85, 255); 
+width: 7px; 
+height: 7px; 
+}
+QPushButton{
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 0);
+	selection-background-color: rgb(170, 85, 0);
+	selection-color: rgb(255, 0, 0);
+	border-style: outset;
+	border-width: 2px;
+	border-radius: 15px;
+	border-color: white;
+}</string>
+   </property>
+   <property name="currentIndex">
+    <number>1</number>
+   </property>
+   <widget class="QWidget" name="portaPage">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1083</width>
+      <height>598</height>
+     </rect>
+    </property>
+    <attribute name="label">
+     <string>PORTA</string>
+    </attribute>
+    <widget class="QGroupBox" name="portaPin0Box">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>30</y>
+       <width>191</width>
+       <height>211</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="title">
+      <string>PIN 0</string>
+     </property>
+     <widget class="QRadioButton" name="portaPin0OutputLowRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>80</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>OUTPUT LOW</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portaPin0InputHighImpRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>120</y>
+        <width>151</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>INPUT HIGH IMP</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portaPin0InputPullRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>160</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>INPUT PULL UP</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portaPin0OutputHighRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>40</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>OUTPUT HIGH</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="portaPin1Box">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>30</y>
+       <width>191</width>
+       <height>211</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="title">
+      <string>PIN 1</string>
+     </property>
+     <widget class="QRadioButton" name="portaPin1OutputLowRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>80</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>OUTPUT LOW</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portaPin1InputHighImpRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>120</y>
+        <width>151</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>INPUT HIGH IMP</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portaPin1InputPullRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>160</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>INPUT PULL UP</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portaPin1OutputHighRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>40</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>OUTPUT HIGH</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="portaPin2Box">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>30</y>
+       <width>191</width>
+       <height>211</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="title">
+      <string>PIN 2</string>
+     </property>
+     <widget class="QRadioButton" name="portaPin2OutputLowRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>80</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>OUTPUT LOW</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portaPin2InputHighImpRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>120</y>
+        <width>151</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>INPUT HIGH IMP</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portaPin2InputPullRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>160</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>INPUT PULL UP</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portaPin2OutputHighRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>40</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>OUTPUT HIGH</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="portaPin3Box">
+     <property name="geometry">
+      <rect>
+       <x>830</x>
+       <y>30</y>
+       <width>191</width>
+       <height>211</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="title">
+      <string>PIN 3</string>
+     </property>
+     <widget class="QRadioButton" name="portaPin3OutputLowRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>80</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>OUTPUT LOW</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portaPin3InputHighImpRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>120</y>
+        <width>151</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>INPUT HIGH IMP</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portaPin3InputPullRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>160</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>INPUT PULL UP</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portaPin3OutputHighRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>40</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>OUTPUT HIGH</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="portaPin7Box">
+     <property name="geometry">
+      <rect>
+       <x>830</x>
+       <y>300</y>
+       <width>191</width>
+       <height>211</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="title">
+      <string>PIN 7</string>
+     </property>
+     <widget class="QRadioButton" name="portaPin7OutputLowRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>80</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>OUTPUT LOW</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portaPin7InputHighImpRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>120</y>
+        <width>151</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>INPUT HIGH IMP</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portaPin7InputPullRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>160</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>INPUT PULL UP</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portaPin7OutputHighRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>40</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>OUTPUT HIGH</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="portaPin4Box">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>300</y>
+       <width>191</width>
+       <height>211</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="title">
+      <string>PIN 4</string>
+     </property>
+     <widget class="QRadioButton" name="portaPin4OutputLowRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>80</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>OUTPUT LOW</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portaPin4InputHighImpRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>120</y>
+        <width>151</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>INPUT HIGH IMP</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portaPin4InputPullRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>160</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>INPUT PULL UP</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portaPin4OutputHighRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>40</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>OUTPUT HIGH</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="portaPin6Box">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>300</y>
+       <width>191</width>
+       <height>211</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="title">
+      <string>PIN 6</string>
+     </property>
+     <widget class="QRadioButton" name="portaPin6OutputLowRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>80</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>OUTPUT LOW</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portaPin6InputHighImpRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>120</y>
+        <width>151</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>INPUT HIGH IMP</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portaPin6InputPullRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>160</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>INPUT PULL UP</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portaPin6OutputHighRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>40</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>OUTPUT HIGH</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="portaPin5Box">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>300</y>
+       <width>191</width>
+       <height>211</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="title">
+      <string>PIN 5</string>
+     </property>
+     <widget class="QRadioButton" name="portaPin5OutputLowRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>80</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>OUTPUT LOW</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portaPin5InputHighImpRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>120</y>
+        <width>151</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>INPUT HIGH IMP</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portaPin5InputPullRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>160</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>INPUT PULL UP</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portaPin5OutputHighRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>40</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>OUTPUT HIGH</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="portbPage">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1083</width>
+      <height>598</height>
+     </rect>
+    </property>
+    <attribute name="label">
+     <string>PORTB</string>
+    </attribute>
+    <widget class="QGroupBox" name="portbPin5Box">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>330</y>
+       <width>191</width>
+       <height>211</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="title">
+      <string>PIN 5</string>
+     </property>
+     <widget class="QRadioButton" name="portbPin5OutputLowRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>80</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>OUTPUT LOW</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portbPin5InputHighImpRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>120</y>
+        <width>151</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>INPUT HIGH IMP</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portbPin5InputPullRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>160</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>INPUT PULL UP</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portbPin5OutputHighRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>40</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>OUTPUT HIGH</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="portbPin2Box">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>60</y>
+       <width>191</width>
+       <height>211</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="title">
+      <string>PIN 2</string>
+     </property>
+     <widget class="QRadioButton" name="portbPin2OutputLowRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>80</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>OUTPUT LOW</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portbPin2InputHighImpRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>120</y>
+        <width>151</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>INPUT HIGH IMP</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portbPin2InputPullRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>160</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>INPUT PULL UP</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portbPin2OutputHighRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>40</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>OUTPUT HIGH</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="portbPin7Box">
+     <property name="geometry">
+      <rect>
+       <x>830</x>
+       <y>330</y>
+       <width>191</width>
+       <height>211</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="title">
+      <string>PIN 7</string>
+     </property>
+     <widget class="QRadioButton" name="portbPin7OutputLowRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>80</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>OUTPUT LOW</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portbPin7InputHighImpRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>120</y>
+        <width>151</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>INPUT HIGH IMP</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portbPin7InputPullRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>160</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>INPUT PULL UP</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portbPin7OutputHighRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>40</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>OUTPUT HIGH</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="portbPin6Box">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>330</y>
+       <width>191</width>
+       <height>211</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="title">
+      <string>PIN 6</string>
+     </property>
+     <widget class="QRadioButton" name="portbPin6OutputLowRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>80</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>OUTPUT LOW</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portbPin6InputHighImpRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>120</y>
+        <width>151</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>INPUT HIGH IMP</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portbPin6InputPullRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>160</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>INPUT PULL UP</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portbPin6OutputHighRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>40</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>OUTPUT HIGH</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="portbPin4Box">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>330</y>
+       <width>191</width>
+       <height>211</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="title">
+      <string>PIN 4</string>
+     </property>
+     <widget class="QRadioButton" name="portbPin4OutputLowRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>80</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>OUTPUT LOW</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portbPin4InputHighImpRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>120</y>
+        <width>151</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>INPUT HIGH IMP</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portbPin4InputPullRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>160</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>INPUT PULL UP</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portbPin4OutputHighRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>40</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>OUTPUT HIGH</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="portbPin3Box">
+     <property name="geometry">
+      <rect>
+       <x>830</x>
+       <y>60</y>
+       <width>191</width>
+       <height>211</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="title">
+      <string>PIN 3</string>
+     </property>
+     <widget class="QRadioButton" name="portbPin3OutputLowRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>80</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>OUTPUT LOW</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portbPin3InputHighImpRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>120</y>
+        <width>151</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>INPUT HIGH IMP</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portbPin3InputPullRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>160</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>INPUT PULL UP</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portbPin3OutputHighRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>40</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>OUTPUT HIGH</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="portbPin0Box">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>60</y>
+       <width>191</width>
+       <height>211</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="title">
+      <string>PIN 0</string>
+     </property>
+     <widget class="QRadioButton" name="portbPin0OutputLowRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>80</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>OUTPUT LOW</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portbPin0InputHighImpRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>120</y>
+        <width>151</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>INPUT HIGH IMP</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portbPin0InputPullRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>160</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>INPUT PULL UP</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portbPin0OutputHighRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>40</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>OUTPUT HIGH</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="portbPin1Box">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>60</y>
+       <width>191</width>
+       <height>211</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="title">
+      <string>PIN 1</string>
+     </property>
+     <widget class="QRadioButton" name="portbPin1OutputLowRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>80</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>OUTPUT LOW</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portbPin1InputHighImpRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>120</y>
+        <width>151</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>INPUT HIGH IMP</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portbPin1InputPullRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>160</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>INPUT PULL UP</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portbPin1OutputHighRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>40</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>OUTPUT HIGH</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="portcPage">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1083</width>
+      <height>598</height>
+     </rect>
+    </property>
+    <attribute name="label">
+     <string>PORTC</string>
+    </attribute>
+    <widget class="QGroupBox" name="portcPin1Box">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>60</y>
+       <width>191</width>
+       <height>211</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="title">
+      <string>PIN 1</string>
+     </property>
+     <widget class="QRadioButton" name="portcPin1OutputLowRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>80</y>
+        <width>130</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>OUTPUT LOW</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portcPin1InputHighImpRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>120</y>
+        <width>147</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>INPUT HIGH IMP</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portcPin1InputPullRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>160</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>INPUT PULL UP</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portcPin1OutputHighRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>40</y>
+        <width>130</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>OUTPUT HIGH</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="portcPin4Box">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>330</y>
+       <width>191</width>
+       <height>211</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="title">
+      <string>PIN 4</string>
+     </property>
+     <widget class="QRadioButton" name="portcPin4OutputLowRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>80</y>
+        <width>130</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>OUTPUT LOW</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portcPin4InputHighImpRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>120</y>
+        <width>147</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>INPUT HIGH IMP</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portcPin4InputPullRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>160</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>INPUT PULL UP</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portcPin4OutputHighRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>40</y>
+        <width>130</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>OUTPUT HIGH</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="portcPin3Box">
+     <property name="geometry">
+      <rect>
+       <x>830</x>
+       <y>60</y>
+       <width>191</width>
+       <height>211</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="title">
+      <string>PIN 3</string>
+     </property>
+     <widget class="QRadioButton" name="portcPin3OutputLowRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>80</y>
+        <width>130</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>OUTPUT LOW</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portcPin3InputHighImpRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>120</y>
+        <width>147</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>INPUT HIGH IMP</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portcPin3InputPullRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>160</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>INPUT PULL UP</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portcPin3OutputHighRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>40</y>
+        <width>130</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>OUTPUT HIGH</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="portcPin6Box">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>330</y>
+       <width>191</width>
+       <height>211</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="title">
+      <string>PIN 6</string>
+     </property>
+     <widget class="QRadioButton" name="portcPin6OutputLowRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>80</y>
+        <width>130</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>OUTPUT LOW</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portcPin6InputHighImpRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>120</y>
+        <width>147</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>INPUT HIGH IMP</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portcPin6InputPullRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>160</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>INPUT PULL UP</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portcPin6OutputHighRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>40</y>
+        <width>130</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>OUTPUT HIGH</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="portcPin7Box">
+     <property name="geometry">
+      <rect>
+       <x>830</x>
+       <y>330</y>
+       <width>191</width>
+       <height>211</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="title">
+      <string>PIN 7</string>
+     </property>
+     <widget class="QRadioButton" name="portcPin7OutputLowRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>80</y>
+        <width>130</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>OUTPUT LOW</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portcPin7InputHighImpRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>120</y>
+        <width>147</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>INPUT HIGH IMP</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portcPin7InputPullRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>160</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>INPUT PULL UP</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portcPin7OutputHighRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>40</y>
+        <width>130</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>OUTPUT HIGH</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="portcPin2Box">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>60</y>
+       <width>191</width>
+       <height>211</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="title">
+      <string>PIN 2</string>
+     </property>
+     <widget class="QRadioButton" name="portcPin2OutputLowRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>80</y>
+        <width>130</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>OUTPUT LOW</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portcPin2InputHighImpRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>120</y>
+        <width>147</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>INPUT HIGH IMP</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portcPin2InputPullRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>160</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>INPUT PULL UP</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portcPin2OutputHighRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>40</y>
+        <width>130</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>OUTPUT HIGH</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="portcPin0Box">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>60</y>
+       <width>191</width>
+       <height>211</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="title">
+      <string>PIN 0</string>
+     </property>
+     <widget class="QRadioButton" name="portcPin0OutputLowRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>80</y>
+        <width>130</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>OUTPUT LOW</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portcPin0InputHighImpRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>120</y>
+        <width>147</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>INPUT HIGH IMP</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portcPin0InputPullRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>160</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>INPUT PULL UP</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portcPin0OutputHighRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>40</y>
+        <width>130</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>OUTPUT HIGH</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="portcPin5Box">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>330</y>
+       <width>191</width>
+       <height>211</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="title">
+      <string>PIN 5</string>
+     </property>
+     <widget class="QRadioButton" name="portcPin5OutputLowRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>80</y>
+        <width>130</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>OUTPUT LOW</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portcPin5InputHighImpRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>120</y>
+        <width>147</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>INPUT HIGH IMP</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portcPin5InputPullRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>160</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>INPUT PULL UP</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portcPin5OutputHighRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>40</y>
+        <width>130</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>OUTPUT HIGH</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="portdPage">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1083</width>
+      <height>598</height>
+     </rect>
+    </property>
+    <attribute name="label">
+     <string>PORTD</string>
+    </attribute>
+    <widget class="QPushButton" name="btnLoad">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>530</y>
+       <width>181</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>13</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Load...</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnSave">
+     <property name="geometry">
+      <rect>
+       <x>730</x>
+       <y>530</y>
+       <width>181</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>13</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Save...</string>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="portdPin5Box">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>270</y>
+       <width>191</width>
+       <height>211</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="title">
+      <string>PIN 5</string>
+     </property>
+     <widget class="QRadioButton" name="portdPin5OutputLowRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>80</y>
+        <width>140</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>OUTPUT LOW</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portdPin5InputHighImpRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>120</y>
+        <width>148</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>INPUT HIGH IMP</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portdPin5InputPullRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>160</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>INPUT PULL UP</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portdPin5OutputHighRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>40</y>
+        <width>140</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>OUTPUT HIGH</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="portdPin4Box">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>270</y>
+       <width>191</width>
+       <height>211</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="title">
+      <string>PIN 4</string>
+     </property>
+     <widget class="QRadioButton" name="portdPin4OutputLowRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>80</y>
+        <width>140</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>OUTPUT LOW</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portdPin4InputHighImpRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>120</y>
+        <width>148</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>INPUT HIGH IMP</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portdPin4InputPullRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>160</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>INPUT PULL UP</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portdPin4OutputHighRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>40</y>
+        <width>140</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>OUTPUT HIGH</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="portdPin3Box">
+     <property name="geometry">
+      <rect>
+       <x>830</x>
+       <y>20</y>
+       <width>191</width>
+       <height>211</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="title">
+      <string>PIN 3</string>
+     </property>
+     <widget class="QRadioButton" name="portdPin3OutputLowRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>80</y>
+        <width>140</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>OUTPUT LOW</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portdPin3InputHighImpRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>120</y>
+        <width>148</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>INPUT HIGH IMP</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portdPin3InputPullRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>160</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>INPUT PULL UP</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portdPin3OutputHighRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>40</y>
+        <width>140</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>OUTPUT HIGH</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="portdPin0Box">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>20</y>
+       <width>191</width>
+       <height>211</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="title">
+      <string>PIN 0</string>
+     </property>
+     <widget class="QRadioButton" name="portdPin0OutputLowRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>80</y>
+        <width>140</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>OUTPUT LOW</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portdPin0InputHighImpRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>120</y>
+        <width>148</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>INPUT HIGH IMP</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portdPin0InputPullRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>160</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>INPUT PULL UP</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portdPin0OutputHighRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>40</y>
+        <width>140</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>OUTPUT HIGH</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="portdPin1Box">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>20</y>
+       <width>191</width>
+       <height>211</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="title">
+      <string>PIN 1</string>
+     </property>
+     <widget class="QRadioButton" name="portdPin1OutputLowRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>80</y>
+        <width>140</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>OUTPUT LOW</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portdPin1InputHighImpRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>120</y>
+        <width>148</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>INPUT HIGH IMP</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portdPin1InputPullRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>160</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>INPUT PULL UP</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portdPin1OutputHighRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>40</y>
+        <width>140</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>OUTPUT HIGH</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="portdPin7Box">
+     <property name="geometry">
+      <rect>
+       <x>830</x>
+       <y>270</y>
+       <width>191</width>
+       <height>211</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="title">
+      <string>PIN 7</string>
+     </property>
+     <widget class="QRadioButton" name="portdPin7OutputLowRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>80</y>
+        <width>140</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>OUTPUT LOW</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portdPin7InputHighImpRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>120</y>
+        <width>148</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>INPUT HIGH IMP</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portdPin7InputPullRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>160</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>INPUT PULL UP</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portdPin7OutputHighRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>40</y>
+        <width>140</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>OUTPUT HIGH</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="portdPin6Box">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>270</y>
+       <width>191</width>
+       <height>211</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="title">
+      <string>PIN 6</string>
+     </property>
+     <widget class="QRadioButton" name="portdPin6OutputLowRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>80</y>
+        <width>140</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>OUTPUT LOW</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portdPin6InputHighImpRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>120</y>
+        <width>148</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>INPUT HIGH IMP</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portdPin6InputPullRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>160</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>INPUT PULL UP</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portdPin6OutputHighRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>40</y>
+        <width>140</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>OUTPUT HIGH</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="portdPin2Box">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>20</y>
+       <width>191</width>
+       <height>211</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="title">
+      <string>PIN 2</string>
+     </property>
+     <widget class="QRadioButton" name="portdPin2OutputLowRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>80</y>
+        <width>140</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>OUTPUT LOW</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portdPin2InputHighImpRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>120</y>
+        <width>148</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>INPUT HIGH IMP</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portdPin2InputPullRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>160</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>INPUT PULL UP</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="portdPin2OutputHighRadio">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>40</y>
+        <width>140</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>OUTPUT HIGH</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="btnGenerate">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>530</y>
+       <width>181</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>13</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Generate...</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btnGenerate</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>repaint()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>532</x>
+     <y>695</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>539</x>
+     <y>373</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnLoad</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>repaint()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>212</x>
+     <y>695</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>539</x>
+     <y>373</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnSave</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>repaint()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>822</x>
+     <y>695</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>539</x>
+     <y>373</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
