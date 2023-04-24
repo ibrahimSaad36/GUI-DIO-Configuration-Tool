@@ -17,8 +17,8 @@ This tool is used to generate hader files which contain the configuration of pin
 * The XML file mode will be changed to read only mode after changing configurations by GUI, so any one else will be not able tochange the structure of the file.
 
 ## Requirements to Use This Program:
-* First insall Python (Version: 3.8.10), and note that using another version may cause some ERRORS
-        [Use this link to download the required version] (https://www.python.org/downloads/release/python-3810/)
+* First insall Python (Version: 3.8.10), and note that using another version may cause some ERRORS,
+        [use this link to download the required version](https://www.python.org/downloads/release/python-3810/)
 * Install PySide2, run these commands in cmd:
 
         python -m pip install --upgrade pip
